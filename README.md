@@ -2,6 +2,8 @@ This project holds only the _docs_ from GraphQL-Ruby.
 
 You could rename it and use it for translating the docs.
 
+It will be published at `https://{username}.github.io/{repository-name}`, for example: https://rmosolgo.github.io/graphql-ruby-doc-en/
+
 ## Background
 
 I started the project by copying the `guides/` directory from graphql-ruby:
