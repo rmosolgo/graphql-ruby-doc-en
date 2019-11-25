@@ -86,7 +86,7 @@ If Apollo Client has issues recognizing the result of `render json: result`, rep
 
 ## Validation and Error Handling
 
-Each query is validated and [analyzed](/queries/analysis) independently. The `results` array may include a mix of successful results and failed results
+Each query is validated and [analyzed]({{ "/queries/analysis" | relative_url }}) independently. The `results` array may include a mix of successful results and failed results
 
 ## Multiplex-Level Context
 
@@ -109,7 +109,7 @@ class MySchema < GraphQL::Schema
 end
 ```
 
-The API is the same as [query analyzers](/queries/analysis), with some considerations:
+The API is the same as [query analyzers]({{ "/queries/analysis" | relative_url }}), with some considerations:
 
 - `initial_value` is called at the start of the _multiplex_ (not query)
 - `final` is called at the end of the _multiplex_ (not query)

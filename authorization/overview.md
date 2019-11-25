@@ -131,8 +131,8 @@ Despite the advantages of authorization at the application layer, as described a
 
 To accomplish these, you can use GraphQL-Ruby's authorization framework. The framework has three levels, each of which is described in its own guide:
 
-- [Visibility](/authorization/visibility) hides parts of the GraphQL schema from users who don't have full permission.
-- [Accessibility](/authorization/accessibility) prevents running queries which access parts of the GraphQL schema, unless users have the required permission.
-- [Authorization](/authorization/authorization) checks application objects during execution to be sure the user has permission to access them.
+- [Visibility]({{ "/authorization/visibility" | relative_url }}) hides parts of the GraphQL schema from users who don't have full permission.
+- [Accessibility]({{ "/authorization/accessibility" | relative_url }}) prevents running queries which access parts of the GraphQL schema, unless users have the required permission.
+- [Authorization]({{ "/authorization/authorization" | relative_url }}) checks application objects during execution to be sure the user has permission to access them.
 
-Also, [GraphQL::Pro](https://graphql.pro) has integrations for [CanCan](/authorization/can_can_integration) and  [Pundit](/authorization/pundit_integration).
+Also, [GraphQL::Pro](https://graphql.pro) has integrations for [CanCan]({{ "/authorization/can_can_integration) and  [Pundit](/authorization/pundit_integration" | relative_url }}).

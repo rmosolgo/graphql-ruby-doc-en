@@ -19,7 +19,7 @@ You can also see a [full Rails & Apollo-Client demo](https://github.com/rmosolgo
 
 ## Updating the gems
 
-`GraphQL::Pro::Defer` is included in `graphql-pro 1.10+`, and it requires the new [Interpreter runtime](/queries/interpreter) in `graphql 1.9+`, so update your gemfile:
+`GraphQL::Pro::Defer` is included in `graphql-pro 1.10+`, and it requires the new [Interpreter runtime]({{ "/queries/interpreter" | relative_url }}) in `graphql 1.9+`, so update your gemfile:
 
 ```ruby
 # 1.9+ for Interpreter
@@ -51,7 +51,7 @@ end
 
 This will:
 
-- Attach a [custom directive](/type_definitions/directives) called `@defer`
+- Attach a [custom directive]({{ "/type_definitions/directives" | relative_url }}) called `@defer`
 - Add instrumentation to queries to track deferred work and execute it later
 
 ## Sending streaming responses
@@ -64,7 +64,7 @@ Many web frameworks have support for streaming responses, for example:
 
 See below for how to integrate GraphQL's deferred patches with a streaming response API.
 
-To investigate support with a web framework, please <a href='"https://github.com/rmosolgo/graphql-ruby/issues/new?title="Server support for @defer with ..."'>open an issue</a>or email `support@graphql.pro`.
+To investigate support with a web framework, please <a href='https://github.com/rmosolgo/graphql-ruby/issues/new?title="Server support for @defer with ..."'>open an issue</a>or email `support@graphql.pro`.
 
 ### Checking for deferrals
 
@@ -133,4 +133,4 @@ You can also investigate a [full Rails & Apollo-Client demo](https://github.com/
 
 ## Next Steps
 
-Read about [client usage](/defer/usage) of `@defer`.
+Read about [client usage]({{ "/defer/usage" | relative_url }}) of `@defer`.

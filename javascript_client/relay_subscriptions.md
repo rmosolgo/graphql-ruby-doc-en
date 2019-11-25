@@ -16,11 +16,11 @@ index: 3
 
 To use it, require `subscriptions/createHandler` and call the function with your client and optionally, your OperationStoreClient.
 
-See the [Subscriptions guide](/subscriptions/overview) for information about server-side setup.
+See the [Subscriptions guide]({{ "/subscriptions/overview" | relative_url }}) for information about server-side setup.
 
 ## Pusher
 
-Subscriptions with [Pusher](/subscriptions/pusher_implementation) require two things:
+Subscriptions with [Pusher]({{ "/subscriptions/pusher_implementation" | relative_url }}) require two things:
 
 - A client from the [`pusher-js` library](https://github.com/pusher/pusher-js)
 - A [`fetchOperation` function](#fetchoperation-function) for sending the `subscription` operation to the server
@@ -53,7 +53,7 @@ var network = Network.create(fetchQuery, subscriptionHandler)
 ```
 
 ## Ably
-Subscriptions with [Ably](/subscriptions/ably_implementation) require two things:
+Subscriptions with [Ably]({{ "/subscriptions/ably_implementation" | relative_url }}) require two things:
 
 - A client from the [`ably-js` library](https://github.com/ably/ably-js)
 - A [`fetchOperation` function](#fetchoperation-function) for sending the `subscription` operation to the server
@@ -87,7 +87,7 @@ var network = Network.create(fetchQuery, subscriptionHandler)
 
 ## ActionCable
 
-With this configuration, `subscription` queries will be routed to [ActionCable](/subscriptions/action_cable_implementation).
+With this configuration, `subscription` queries will be routed to [ActionCable]({{ "/subscriptions/action_cable_implementation" | relative_url }}).
 
 For example:
 

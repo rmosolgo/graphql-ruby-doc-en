@@ -9,7 +9,7 @@ index: 2
 ---
 
 
-**NOTE**: See [Mutation Classes](/mutations/mutation_classes) for an updated mutation API.
+**NOTE**: See [Mutation Classes]({{ "/mutations/mutation_classes" | relative_url }}) for an updated mutation API.
 
 ------
 

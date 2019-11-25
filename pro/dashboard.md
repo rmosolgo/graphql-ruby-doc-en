@@ -10,7 +10,7 @@ pro: true
 ---
 
 
-[GraphQL-Pro](https://graphql.pro) includes a web dashboard for monitoring [Operation Store](/operation_store/overview) and  [subscriptions](/subscriptions/pusher_implementation).
+[GraphQL-Pro](https://graphql.pro) includes a web dashboard for monitoring [Operation Store]({{ "/operation_store/overview) and  [subscriptions](/subscriptions/pusher_implementation" | relative_url }}).
 
 <!-- TODO image -->
 

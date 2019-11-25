@@ -9,7 +9,7 @@ index: 2
 pro: true
 ---
 
-__NOTE:__ A new [Pundit integration](/authorization/pundit_integration) and [CanCan integration](/authorization/can_can_integration) are available. They leverage GraphQL-Ruby's new [built-in auth](/authorization/overview) system and has better support for inheritance and customization. If possible, use those instead!
+__NOTE:__ A new [Pundit integration]({{ "/authorization/pundit_integration) and [CanCan integration](/authorization/can_can_integration) are available. They leverage GraphQL-Ruby's new [built-in auth](/authorization/overview" | relative_url }}) system and has better support for inheritance and customization. If possible, use those instead!
 
 ------
 
@@ -144,7 +144,7 @@ end
 
 The function is used to handle unauthorized objects:
 
-You could refer to the basic authorization [guide](/authorization/authorization) for more details.
+You could refer to the basic authorization [guide]({{ "/authorization/authorization" | relative_url }}) for more details.
 
 ## Access Authorization
 
@@ -174,7 +174,7 @@ end
 
 The function is used to handle unauthorized fields:
 
-You could refer to the basic authorization [guide](/authorization/authorization) for more details.
+You could refer to the basic authorization [guide]({{ "/authorization/authorization" | relative_url }}) for more details.
 
 ## Visibility Authorization
 
@@ -195,7 +195,7 @@ end
 
 ## Pundit
 
-__NOTE:__ A new [Pundit integration](/authorization/pundit_integration) is available. It leverages GraphQL-Ruby's new [built-in auth](/authorization/overview) system and has better support for inheritance and customization. If possible, use that one instead!
+__NOTE:__ A new [Pundit integration]({{ "/authorization/pundit_integration) is available. It leverages GraphQL-Ruby's new [built-in auth](/authorization/overview" | relative_url }}) system and has better support for inheritance and customization. If possible, use that one instead!
 
 `GraphQL::Pro` includes built-in support for [Pundit](https://github.com/elabs/pundit):
 
@@ -260,7 +260,7 @@ See [Scoping](#scoping) for details.
 
 ## CanCan
 
-__NOTE:__ A new [CanCan integration](/authorization/can_can_integration) is available. It leverages GraphQL-Ruby's new [built-in auth](/authorization/overview) system and has better support for inheritance and customization. If possible, use that one instead!
+__NOTE:__ A new [CanCan integration]({{ "/authorization/can_can_integration) is available. It leverages GraphQL-Ruby's new [built-in auth](/authorization/overview" | relative_url }}) system and has better support for inheritance and customization. If possible, use that one instead!
 
 `GraphQL::Pro` includes built-in support for [CanCan](https://github.com/CanCanCommunity/cancancan):
 

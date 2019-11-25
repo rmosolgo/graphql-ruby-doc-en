@@ -7,11 +7,11 @@ desc: Reject queries from unauthorized users if they access certain parts of the
 index: 2
 ---
 
-__NOTE:__ This kind of authorization is deprecated and isn't supported by the [forthcoming GraphQL runtime](/queries/interpreter) because it's too slow.
+__NOTE:__ This kind of authorization is deprecated and isn't supported by the [forthcoming GraphQL runtime]({{ "/queries/interpreter" | relative_url }}) because it's too slow.
 
 With GraphQL-Ruby, you can inspect an incoming query, and return a custom error if that query accesses some unauthorized parts of the schema.
 
-This is different from [visibility](/authorization/visibility), where unauthorized parts of the schema are treated as non-existent. It's also different from [authorization](/authorization/authorization), which makes checks _while running_, instead of _before running_.
+This is different from [visibility]({{ "/authorization/visibility), where unauthorized parts of the schema are treated as non-existent. It's also different from [authorization](/authorization/authorization" | relative_url }}), which makes checks _while running_, instead of _before running_.
 
 ## Opt-In
 

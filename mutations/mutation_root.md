@@ -41,4 +41,4 @@ end
 
 Now, whenever an incoming request uses the `mutation` keyword, it will go to `Mutation`.
 
-See [Mutation Classes](/mutations/mutation_classes) for some helpers to define mutation fields.
+See [Mutation Classes]({{ "/mutations/mutation_classes" | relative_url }}) for some helpers to define mutation fields.

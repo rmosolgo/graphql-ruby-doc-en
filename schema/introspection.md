@@ -113,9 +113,9 @@ Keep in mind that off-the-shelf tooling may not support your custom introspectio
 
 The introspection namespace may contain a few different customizations:
 
-- Class-based [object definitions](/type_definitions/objects) which replace the built-in introspection types (such as `__Schema` and `__Type`)
-- `EntryPoints`, A class-based [object definition](/type_definitions/objects) containing introspection entry points (like `__schema` and `__type(name:)`).
-- `DynamicFields`, A class-based [object definition](/type_definitions/objects) containing dynamic, globally-available fields (like `__typename`.)
+- Class-based [object definitions]({{ "/type_definitions/objects) which replace the built-in introspection types (such as `__Schema` and `__Type`" | relative_url }})
+- `EntryPoints`, A class-based [object definition]({{ "/type_definitions/objects) containing introspection entry points (like `__schema` and `__type(name:)`" | relative_url }}).
+- `DynamicFields`, A class-based [object definition]({{ "/type_definitions/objects) containing dynamic, globally-available fields (like `__typename`." | relative_url }})
 
 ### Custom Introspection Types
 

@@ -8,7 +8,7 @@ desc: Run the whole GraphQL stack in tests
 index: 2
 ---
 
-Besides testing [schema structure](/testing/schema_structure), you should also test your GraphQL system's behavior. There are really a few levels to this:
+Besides testing [schema structure]({{ "/testing/schema_structure" | relative_url }}), you should also test your GraphQL system's behavior. There are really a few levels to this:
 
 - __Application-level__ behaviors, like business logic, permissions, and persistence. These behaviors may be shared by your API and user interface.
 - __Interface-level__ behaviors, like GraphQL fields, mutations, error scenarios, and HTTP-specific behaviors. These are unique to your GraphQL system.

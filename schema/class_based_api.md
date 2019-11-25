@@ -21,16 +21,16 @@ You can get an overview of this new feature:
 
 And learn about the APIs:
 
-- [Schema class](/schema/definition)
+- [Schema class]({{ "/schema/definition" | relative_url }})
 - [Common type configurations](#common-type-configurations) (shared by all the following types)
-- [Object classes](/type_definitions/objects)
-- [Interface classes](/type_definitions/interfaces)
-- [Union classes](/type_definitions/unions)
-- [Enum classes](/type_definitions/enums)
-- [Input Object classes](/type_definitions/input_objects)
-- [Scalar classes](/type_definitions/scalars)
-- [Customizing definitions](/type_definitions/extensions)
-- [Custom introspection](/schema/introspection)
+- [Object classes]({{ "/type_definitions/objects" | relative_url }})
+- [Interface classes]({{ "/type_definitions/interfaces" | relative_url }})
+- [Union classes]({{ "/type_definitions/unions" | relative_url }})
+- [Enum classes]({{ "/type_definitions/enums" | relative_url }})
+- [Input Object classes]({{ "/type_definitions/input_objects" | relative_url }})
+- [Scalar classes]({{ "/type_definitions/scalars" | relative_url }})
+- [Customizing definitions]({{ "/type_definitions/extensions" | relative_url }})
+- [Custom introspection]({{ "/schema/introspection" | relative_url }})
 
 ## Rationale & Goals
 

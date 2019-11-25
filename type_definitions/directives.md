@@ -30,7 +30,7 @@ Here's how the two built-in directives work:
 - `@skip(if: ...)` skips the selection if the `if: ...` value is truthy (`GraphQL::Schema::Directive::Skip`)
 - `@include(if: ...)` includes the selection if the `if: ...` value is truthy (`GraphQL::Schema::Directive::Include`)
 
-GraphQL-Ruby also supports custom directives for use with the [interpreter runtime](/queries/interpreter).
+GraphQL-Ruby also supports custom directives for use with the [interpreter runtime]({{ "/queries/interpreter" | relative_url }}).
 
 ## Custom Directives
 
@@ -58,7 +58,7 @@ end
 
 ### Arguments
 
-Like fields, directives may have [arguments](/fields/arguments) :
+Like fields, directives may have [arguments]({{ "/fields/arguments" | relative_url }}) :
 
 ```ruby
 argument :if, Boolean, required: true,

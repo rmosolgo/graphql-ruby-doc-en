@@ -81,13 +81,13 @@ end
 
 ### Handling Unauthorized Objects
 
-When any CanCan check returns `false`, the unauthorized object is passed to `Schema.unauthorized_object`, as described in [Handling unauthorized objects](/authorization/authorization#handling-unauthorized-objects).
+When any CanCan check returns `false`, the unauthorized object is passed to `Schema.unauthorized_object`, as described in [Handling unauthorized objects]({{ "/authorization/authorization#handling-unauthorized-objects" | relative_url }}).
 
 ## Scopes
 
 #### ActiveRecord::Relation
 
-The CanCan integration adds [CanCan's `.accessible_by`](https://github.com/cancancommunity/cancancan/wiki/Fetching-Records) to GraphQL-Ruby's [list scoping](/authorization/scoping)
+The CanCan integration adds [CanCan's `.accessible_by`](https://github.com/cancancommunity/cancancan/wiki/Fetching-Records) to GraphQL-Ruby's [list scoping]({{ "/authorization/scoping" | relative_url }})
 
 To scope lists of interface or union type, include the integration in your base union class and base interface module _and_ set a base `can_can_action`, if desired:
 
@@ -296,7 +296,7 @@ The method is called with:
 
 Since it's a mutation method, you can also access `context` in that method.
 
-Whatever that method returns will be treated as an early return value for the mutation, so for example, you could return [errors as data](/mutations/mutation_errors):
+Whatever that method returns will be treated as an early return value for the mutation, so for example, you could return [errors as data]({{ "/mutations/mutation_errors" | relative_url }}):
 
 ```ruby
 class Mutations::BaseMutation < GraphQL::Schema::RelayClassicMutation

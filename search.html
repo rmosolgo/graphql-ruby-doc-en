@@ -18,7 +18,7 @@ title: Search
 </template>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    var searchQueryMatch = window.location.href.match(/\?query=(.*)/)
+    var searchQueryMatch = window.location.href.match({{ "/\?query=(.*)/" | relative_url }})
     var searchQuery, searchResults
     if (!searchQueryMatch) {
       renderResults("(no query)", [])

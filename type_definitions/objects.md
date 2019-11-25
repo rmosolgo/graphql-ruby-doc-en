@@ -90,7 +90,7 @@ end
 
 Object fields expose data about that object or connect the object to other objects. You can add fields to your object types with the `field(...)` class method.
 
-See the [Fields guide](/fields/introduction) for details about object fields.
+See the [Fields guide]({{ "/fields/introduction" | relative_url }}) for details about object fields.
 
 ## Implementing interfaces
 
@@ -107,4 +107,4 @@ When an object `implements` interfaces, it:
 - inherits the GraphQL field definitions from that object
 - includes that module into the object definition
 
-Read more about interfaces in the [Interfaces guide](/type_definitions/interfaces)
+Read more about interfaces in the [Interfaces guide]({{ "/type_definitions/interfaces" | relative_url }})

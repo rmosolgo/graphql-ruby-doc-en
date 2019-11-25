@@ -29,7 +29,7 @@ The validation rules are part of the GraphQL specification and built into GraphQ
 
 ## Analysis Errors
 
-GraphQL-Ruby supports pre-execution analysis, which may return `"errors"` instead of running a query. You can find details in the [Analysis guide](/queries/analysis).
+GraphQL-Ruby supports pre-execution analysis, which may return `"errors"` instead of running a query. You can find details in the [Analysis guide]({{ "/queries/analysis" | relative_url }}).
 
 ## GraphQL Invariants
 
@@ -38,17 +38,17 @@ While GraphQL-Ruby is executing a query, some constraints must be satisfied. For
 - Non-null fields may not return `nil`.
 - Interface and union types must resolve objects to types that belong to that interface/union.
 
-These constraints are part of the GraphQL specification, and when they are violated, it must be addressed somehow. Read more in [Type Errors](/errors/type_errors).
+These constraints are part of the GraphQL specification, and when they are violated, it must be addressed somehow. Read more in [Type Errors]({{ "/errors/type_errors" | relative_url }}).
 
 ## Top-level `"errors"`
 
 The GraphQL specification provides for a top-level `"errors"` key which may include information about errors during query execution. `"errors"` and `"data"` may _both_ be present in the case of a partial success.
 
-In your own schema, you can add to the `"errors"` key by raising `GraphQL::ExecutionError` (or subclasses of it) in your code. Read more in the [Execution Errors guide](/errors/execution_errors).
+In your own schema, you can add to the `"errors"` key by raising `GraphQL::ExecutionError` (or subclasses of it) in your code. Read more in the [Execution Errors guide]({{ "/errors/execution_errors" | relative_url }}).
 
 ## Handled Errors
 
-A schema can be configured to handle certain errors during field execution with handlers that you give it, using `rescue_from`. Read more in the [Error Handling guide](/errors/error_handling).
+A schema can be configured to handle certain errors during field execution with handlers that you give it, using `rescue_from`. Read more in the [Error Handling guide]({{ "/errors/error_handling" | relative_url }}).
 
 ## Unhandled Errors (Crashes)
 
@@ -60,4 +60,4 @@ For example, Rails will probably return a generic `500` page.
 
 When you want end users (human beings) to read error messages, you can express errors _in the schema_, using normal GraphQL fields and types. In this approach, errors are strongly-typed data, queryable in the schema, like any other application data.
 
-For more about this approach, see [Mutation Errors](/mutations/mutation_errors)
+For more about this approach, see [Mutation Errors]({{ "/mutations/mutation_errors" | relative_url }})

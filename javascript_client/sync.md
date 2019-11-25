@@ -18,7 +18,7 @@ JavaScript support for GraphQL projects using [graphql-pro](https://graphql.pro)
 - [Plain JS support](#use-with-plain-javascript)
 - [Authorization](#authorization)
 
-See the [OperationStore guide](/operation_store/overview) for server-side setup.
+See the [OperationStore guide]({{ "/operation_store/overview" | relative_url }}) for server-side setup.
 
 ## `sync` utility
 
@@ -39,11 +39,11 @@ Generating client module in app/javascript/graphql/OperationStoreClient.js...
 
 option | description
 --------|----------
-`--url` | [Sync API](/operation_store/getting_started.html#add-routes) url
+`--url` | [Sync API]({{ "/operation_store/getting_started.html#add-routes" | relative_url }}) url
 `--path` | Local directory to search for `.graphql` / `.graphql.js` files
 `--relay-persisted-output` | Path to a `.json` file from `relay-compiler ... --persist-output`
-`--client` | Client ID ([created on server](/operation_store/client_workflow))
-`--secret` | Client Secret ([created on server](/operation_store/client_workflow))
+`--client` | Client ID ([created on server]({{ "/operation_store/client_workflow)" | relative_url }})
+`--secret` | Client Secret ([created on server]({{ "/operation_store/client_workflow)" | relative_url }})
 `--outfile` | Destination for generated code
 `--outfile-type` | What kind of code to generate (`js` or `json`)
 `--add-typename` | Add `__typename` to all selection sets (for use with Apollo Client)
@@ -88,7 +88,7 @@ function fetchQuery(operation, variables, cacheConfig, uploadables) {
     method: 'POST',
     headers: { /*...*/ },
     body: JSON.stringify(requestParams),
-  }).then(/* ... */);
+  }).then({{ "/* ... */" | relative_url }});
 }
 
 // ...
@@ -231,7 +231,7 @@ $.post("/graphql", {
 
 ## Authorization
 
-`OperationStore` uses HMAC-SHA256 to [authenticate requests](/operation_store/access_control).
+`OperationStore` uses HMAC-SHA256 to [authenticate requests]({{ "/operation_store/access_control" | relative_url }}).
 
 Pass the key to `graphql-ruby-client sync` as `--secret` to authenticate it:
 

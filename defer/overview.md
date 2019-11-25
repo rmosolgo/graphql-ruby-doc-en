@@ -9,13 +9,13 @@ index: 0
 pro: true
 ---
 
-`@defer` is a [directive](/type_definitions/directives) for streaming GraphQL responses from the server to the client.
+`@defer` is a [directive]({{ "/type_definitions/directives" | relative_url }}) for streaming GraphQL responses from the server to the client.
 
 By streaming the response, the server can send the most critical (or most available) data _first_, following up with secondary data shortly afterward.
 
 `@defer` was first described by [Lee Byron at React Europe 2015](https://youtu.be/ViXL0YQnioU?t=768) and got experimental support in [Apollo in 2018](https://blog.apollographql.com/introducing-defer-in-apollo-server-f6797c4e9d6e).
 
-`@defer` requires the new [interpreter runtime](/queries/interpreter) which ships with GraphQL-Ruby 1.9+.
+`@defer` requires the new [interpreter runtime]({{ "/queries/interpreter" | relative_url }}) which ships with GraphQL-Ruby 1.9+.
 
 ## Example
 
@@ -58,4 +58,4 @@ View the full demo at https://github.com/rmosolgo/graphql_defer_example.
 
 ## Next Steps
 
-[Set up your server](/defer/setup) to support `@defer` or read about  [client usage](/defer/usage) of it.
+[Set up your server]({{ "/defer/setup) to support `@defer` or read about  [client usage](/defer/usage" | relative_url }}) of it.

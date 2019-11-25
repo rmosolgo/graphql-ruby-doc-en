@@ -31,7 +31,7 @@ class Subscriptions::BaseSubscription < GraphQL::Schema::Subscription
 end
 ```
 
-(This base class is a lot like the [mutation base class](/mutations/mutation_classes). They're both subclasses of `GraphQL::Schema::Resolver`.)
+(This base class is a lot like the [mutation base class]({{ "/mutations/mutation_classes). They're both subclasses of `GraphQL::Schema::Resolver`." | relative_url }})
 
 ## Extend the base class and hook it up
 
@@ -63,7 +63,7 @@ subscription {
 
 ## Arguments
 
-Subscription fields take [arguments](/fields/arguments) just like normal fields. They also accept a  [`loads:` option](/mutations/mutation_classes#auto-loading-arguments) just like mutations. For example:
+Subscription fields take [arguments]({{ "/fields/arguments) just like normal fields. They also accept a  [`loads:` option](/mutations/mutation_classes#auto-loading-arguments" | relative_url }}) just like mutations. For example:
 
 ```ruby
 class Subscriptions::MessageWasPosted < Subscriptions::BaseSubscription
@@ -186,7 +186,7 @@ You can define this method to add initial responses or perform other logic befor
 
 ### Adding an Initial Response
 
-(__Note__: only supported when using the new [Interpreter runtime](/queries/interpreter#installation))
+(__Note__: only supported when using the new [Interpreter runtime]({{ "/queries/interpreter#installation)" | relative_url }})
 
 By default, GraphQL-Ruby returns _nothing_ (`:no_response`) on an initial subscription. But, you may choose to override this and return a value in `def subscribe`. For example:
 
@@ -222,9 +222,9 @@ subscription($roomId: ID!) {
 
 ## Subsequent Updates with #update
 
-(__Note__: only supported when using the new [Interpreter runtime](/queries/interpreter#installation))
+(__Note__: only supported when using the new [Interpreter runtime]({{ "/queries/interpreter#installation)" | relative_url }})
 
-After a client has registered a subscription, the application may trigger subscription updates with `MySchema.subscriptions.trigger(...)` (see the [Triggers guide](/subscriptions/triggers) for more). Then, `def update` will be called for each client's subscription. In this method you can:
+After a client has registered a subscription, the application may trigger subscription updates with `MySchema.subscriptions.trigger(...)` (see the [Triggers guide]({{ "/subscriptions/triggers) for more" | relative_url }}). Then, `def update` will be called for each client's subscription. In this method you can:
 
 - Unsubscribe the client with `unsubscribe`
 - Return a value with `super` (which returns `object`) or by returning a different value.
@@ -232,7 +232,7 @@ After a client has registered a subscription, the application may trigger subscr
 
 ### Skipping subscription updates
 
-(__Note__: only supported when using the new [Interpreter runtime](/queries/interpreter#installation))
+(__Note__: only supported when using the new [Interpreter runtime]({{ "/queries/interpreter#installation)" | relative_url }})
 
 Perhaps you don't want to send updates to a certain subscriber. For example, if someone leaves a comment, you might want to push to push the new comment to _other_ subscribers, but not the commenter, who already has that comment data. You can accomplish this by returning `:no_update`.
 
@@ -252,7 +252,7 @@ end
 
 ### Returning a different object for subscription updates
 
-(__Note__: only supported when using the new [Interpreter runtime](/queries/interpreter#installation))
+(__Note__: only supported when using the new [Interpreter runtime]({{ "/queries/interpreter#installation)" | relative_url }})
 
 By default, whatever object you pass to `.trigger(event_name, args, object)` will be used for responding to subscription fields. But, you can return a different object from `#update` to override this:
 

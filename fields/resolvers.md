@@ -88,7 +88,7 @@ class Types::User < BaseObject
 end
 ```
 
-- If the module approach looks good to you, also consider [Interfaces](/type_definitions/interfaces). They also share behavior between objects (since they're just modules that get included, after all), and they expose that commonality to clients via introspection.
+- If the module approach looks good to you, also consider [Interfaces]({{ "/type_definitions/interfaces). They also share behavior between objects (since they're just modules that get included, after all" | relative_url }}), and they expose that commonality to clients via introspection.
 
 ## When do you really need a resolver?
 

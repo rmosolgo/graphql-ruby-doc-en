@@ -221,7 +221,7 @@ That gives you fine-grained control of context reloading.
 
 ## Dashboard
 
-You can monitor subscription state in the [GraphQL-Pro Dashboard](/pro/dashboard):
+You can monitor subscription state in the [GraphQL-Pro Dashboard]({{ "/pro/dashboard" | relative_url }}):
 
 {{ "/subscriptions/redis_dashboard_1.png" | link_to_img:"Redis Subscription Dashboard" }}
 
@@ -231,7 +231,7 @@ You can monitor subscription state in the [GraphQL-Pro Dashboard](/pro/dashboard
 
 #### Clear subscription data
 
-At any time, you can reset your subscription database with the __"Reset"__ button in the [GraphQL-Pro Dashboard](/pro/dashboard), or in Ruby:
+At any time, you can reset your subscription database with the __"Reset"__ button in the [GraphQL-Pro Dashboard]({{ "/pro/dashboard" | relative_url }}), or in Ruby:
 
 ```ruby
 # Wipe all subscription data from the DB:
@@ -244,4 +244,4 @@ To receive webhooks in development, you can [use ngrok](https://www.ably.io/tuto
 
 ## Client configuration
 
-Install the [Ably JS client](https://github.com/ably/ably-js) then see docs for [Apollo Client](/javascript_client/apollo_subscriptions).
+Install the [Ably JS client](https://github.com/ably/ably-js) then see docs for [Apollo Client]({{ "/javascript_client/apollo_subscriptions" | relative_url }}).

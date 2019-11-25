@@ -72,7 +72,7 @@ The new runtime works with class-based schemas only. Several features are no lon
   - Resolve procs
   - `GraphQL::Function`
 
-  All these depend on the memory- and time-hungry per-field `ctx` object. To improve performance, only method-based resolves are supported. If need something from `ctx`, you can get it with the `extras: [...]` configuration option. To wrap resolve behaviors, try [Field Extensions](/type_definitions/field_extensions), [Tracing](/queries/tracing), or  [GraphQL::Schema::Resolver](/fields/resolvers).
+  All these depend on the memory- and time-hungry per-field `ctx` object. To improve performance, only method-based resolves are supported. If need something from `ctx`, you can get it with the `extras: [...]` configuration option. To wrap resolve behaviors, try [Field Extensions]({{ "/type_definitions/field_extensions), [Tracing](/queries/tracing), or  [GraphQL::Schema::Resolver](/fields/resolvers" | relative_url }}).
 
 - Query analyzers and `irep_node`s
 
@@ -104,11 +104,11 @@ Maybe this section should have been called _incompatibility_ 🤔.
 
 ## Extending the Runtime
 
-See [Directives](/type_definitions/directives).
+See [Directives]({{ "/type_definitions/directives" | relative_url }}).
 
 ## Analyzers
 
-GraphQL-Ruby has "analyzers" that run _before_ execution and may reject a query. With the interpreter, you can use [AST Analyzers](/queries/ast_analysis) to get better performance.
+GraphQL-Ruby has "analyzers" that run _before_ execution and may reject a query. With the interpreter, you can use [AST Analyzers]({{ "/queries/ast_analysis" | relative_url }}) to get better performance.
 
 To make the migration, convert your previous analyzers to extend `GraphQL::Analysis::AST::Analyzer` as described in the guide, then add to your schema:
 

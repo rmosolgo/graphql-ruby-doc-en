@@ -9,7 +9,7 @@ index: 3
 pro: true
 ---
 
-After [getting started](/operation_store/getting_started), here some things to keep in mind.
+After [getting started]({{ "/operation_store/getting_started" | relative_url }}), here some things to keep in mind.
 
 ### Rejecting Arbitrary Queries
 
@@ -55,7 +55,7 @@ MySchema.execute(
 
 ### Deleting Data
 
-Clients can only _add_ to the database, but as an administrator, you can also delete entries from the database. (Make sure you [authorize access to the Dashboard](/pro/dashboard).)This is a dangerous operation: by deleting something, any clients who depend on that data will crash.
+Clients can only _add_ to the database, but as an administrator, you can also delete entries from the database. (Make sure you [authorize access to the Dashboard]({{ "/pro/dashboard)." | relative_url }})This is a dangerous operation: by deleting something, any clients who depend on that data will crash.
 
 Some reasons to delete from the database are:
 

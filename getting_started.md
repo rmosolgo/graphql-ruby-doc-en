@@ -97,7 +97,7 @@ class Schema < GraphQL::Schema
 end
 ```
 
-This schema is ready to serve GraphQL queries! [Browse the guides](/guides) to learn about other GraphQL Ruby features.
+This schema is ready to serve GraphQL queries! [Browse the guides]({{ "/guides" | relative_url }}) to learn about other GraphQL Ruby features.
 
 ### Execute queries
 
@@ -124,7 +124,7 @@ result_hash = Schema.execute(query_string)
 # }
 ```
 
-See [Executing Queries](/queries/executing_queries) for more information about running queries on your schema.
+See [Executing Queries]({{ "/queries/executing_queries" | relative_url }}) for more information about running queries on your schema.
 
 ## Use with Relay
 

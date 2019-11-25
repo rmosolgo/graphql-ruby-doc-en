@@ -16,7 +16,7 @@ To use `GraphQL::Pro::OperationStore` with your app, follow these steps:
 - [Add `OperationStore`](#add-operationstore) to your GraphQL schema
 - [Add routes](#add-routes) for the Dashboard and sync API
 - [Update your controller](#update-the-controller) to support persisted queries
-- [Add a client](/operation_store/client_workflow) to start syncing queries
+- [Add a client]({{ "/operation_store/client_workflow" | relative_url }}) to start syncing queries
 
 #### Dependencies
 
@@ -109,9 +109,9 @@ Rails.application.routes.draw do
 end
 ```
 
-`MySchema.operation_store_sync` receives pushes from clients. See [Client Workflow](/operation_store/client_workflow) for more info on how this endpoint is used.
+`MySchema.operation_store_sync` receives pushes from clients. See [Client Workflow]({{ "/operation_store/client_workflow" | relative_url }}) for more info on how this endpoint is used.
 
-`MySchema.dashboard` includes a web view to the `OperationStore`, visible at `/graphql/dashboard`. See the [Dashboard guide](/pro/dashboard) for more details, including authorization.
+`MySchema.dashboard` includes a web view to the `OperationStore`, visible at `/graphql/dashboard`. See the [Dashboard guide]({{ "/pro/dashboard" | relative_url }}) for more details, including authorization.
 
 {{ "/operation_store/graphql_ui.png" | link_to_img:"GraphQL Persisted Operations Dashboard" }}
 
@@ -138,8 +138,8 @@ MySchema.execute(
 
 `OperationStore` will use `operation_id` to fetch the operation from the database.
 
-See [Server Management](/operation_store/server_management) for details about rejecting GraphQL from `params[:query]`.
+See [Server Management]({{ "/operation_store/server_management" | relative_url }}) for details about rejecting GraphQL from `params[:query]`.
 
 #### Next Steps
 
-Sync your operations with the [Client Workflow](/operation_store/client_workflow).
+Sync your operations with the [Client Workflow]({{ "/operation_store/client_workflow" | relative_url }}).

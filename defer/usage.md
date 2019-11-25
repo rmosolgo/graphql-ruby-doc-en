@@ -31,4 +31,4 @@ Want to use `@defer` with another client? Please {<a href='https://github.com/rm
 
 ## Next Steps
 
-[Set up your server](/defer/setup) to support `@defer`.
+[Set up your server]({{ "/defer/setup" | relative_url }}) to support `@defer`.

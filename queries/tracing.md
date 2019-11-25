@@ -113,7 +113,7 @@ end
 
 ## Skylight
 
-To add [Skylight](https://www.skylight.io) instrumentation, you may either enable the [GraphQL probe](https://www.skylight.io/support/getting-more-from-skylight#graphql) or use [ActiveSupportNotificationsTracing](/queries/tracing.html#activesupportnotifications).
+To add [Skylight](https://www.skylight.io) instrumentation, you may either enable the [GraphQL probe](https://www.skylight.io/support/getting-more-from-skylight#graphql) or use [ActiveSupportNotificationsTracing]({{ "/queries/tracing.html#activesupportnotifications" | relative_url }}).
 
 ```ruby
 # config/application.rb

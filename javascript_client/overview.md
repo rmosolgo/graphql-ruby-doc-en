@@ -23,5 +23,5 @@ See detailed guides for more info about its features:
 
 - [sync CLI](javascript_client/sync) for use with [graphql-pro](https://graphql.pro)'s persisted query backend
 - Subscription support:
-  - [Apollo integration](/javascript_client/apollo_subscriptions)
-  - [Relay integration](/javascript_client/relay_subscriptions)
+  - [Apollo integration]({{ "/javascript_client/apollo_subscriptions" | relative_url }})
+  - [Relay integration]({{ "/javascript_client/relay_subscriptions" | relative_url }})

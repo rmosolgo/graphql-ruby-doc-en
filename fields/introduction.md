@@ -15,7 +15,7 @@ Object fields expose data about that object or connect the object to other objec
 field :name, String, "The unique name of this list", null: false
 ```
 
-[Objects](/type_definitions/objects) and  [Interfaces](/type_definitions/interfaces) have fields.
+[Objects]({{ "/type_definitions/objects) and  [Interfaces](/type_definitions/interfaces" | relative_url }}) have fields.
 
 The different elements of field definition are addressed below:
 
@@ -32,9 +32,9 @@ The second argument to `field(...)` is the return type. This can be:
 
 - A built-in GraphQL type (`Integer`, `Float`, `String`, `ID`, or `Boolean`)
 - A GraphQL type from your application
-- An _array_ of any of the above, which denotes a [list type](/type_definitions/lists).
+- An _array_ of any of the above, which denotes a [list type]({{ "/type_definitions/lists" | relative_url }}).
 
-[Nullability](/type_definitions/non_nulls) is expressed with the required `null:` keyword:
+[Nullability]({{ "/type_definitions/non_nulls" | relative_url }}) is expressed with the required `null:` keyword:
 
 - `null: true` means that the field _may_ return `nil`
 - `null: false` means the field is non-nullable; it may not return `nil`. If the implementation returns `nil`, GraphQL-Ruby will return an error to the client.
@@ -180,7 +180,7 @@ _Arguments_ allow fields to take input to their resolution. For example:
 - A `user()` field may take an `id:` argument, which specifies which user to find, eg `user(id: 1)`
 - An `attachments()` field may take a `type:` argument, which filters the result by file type, eg `attachments(type: PHOTO)`
 
-Read more in the [Arguments guide](/fields/arguments)
+Read more in the [Arguments guide]({{ "/fields/arguments" | relative_url }})
 
 ### Extra Field Metadata
 
@@ -191,7 +191,7 @@ A few `extras` are available:
 - `ast_node`
 - `graphql_name` (the field's name)
 - `owner` (the type that this field belongs to)
-- `lookahead` (see [Lookahead](/queries/lookahead))
+- `lookahead` (see [Lookahead]({{ "/queries/lookahead)" | relative_url }})
 - `execution_errors`, whose `#add(err_or_msg)` method should be used for adding errors
 - Custom extras, see below
 

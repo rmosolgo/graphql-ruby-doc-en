@@ -231,7 +231,7 @@ That gives you fine-grained control of context reloading.
 
 ## Dashboard
 
-You can monitor subscription state in the [GraphQL-Pro Dashboard](/pro/dashboard):
+You can monitor subscription state in the [GraphQL-Pro Dashboard]({{ "/pro/dashboard" | relative_url }}):
 
 {{ "/subscriptions/redis_dashboard_1.png" | link_to_img:"Redis Subscription Dashboard" }}
 
@@ -241,7 +241,7 @@ You can monitor subscription state in the [GraphQL-Pro Dashboard](/pro/dashboard
 
 #### Clear subscription data
 
-At any time, you can reset your subscription database with the __"Reset"__ button in the [GraphQL-Pro Dashboard](/pro/dashboard), or in Ruby:
+At any time, you can reset your subscription database with the __"Reset"__ button in the [GraphQL-Pro Dashboard]({{ "/pro/dashboard" | relative_url }}), or in Ruby:
 
 ```ruby
 # Wipe all subscription data from the DB:
@@ -254,4 +254,4 @@ To receive Pusher's webhooks in development, Pusher [suggests using ngrok](https
 
 ## Client configuration
 
-Install the [Pusher JS client](https://github.com/pusher/pusher-js) then see docs for [Apollo Client](/javascript_client/apollo_subscriptions) or  [Relay Modern](/javascript_client/relay_subscriptions).
+Install the [Pusher JS client](https://github.com/pusher/pusher-js) then see docs for [Apollo Client]({{ "/javascript_client/apollo_subscriptions) or  [Relay Modern](/javascript_client/relay_subscriptions" | relative_url }}).

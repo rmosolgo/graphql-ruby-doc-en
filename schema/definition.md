@@ -8,7 +8,7 @@ desc: Defining your schema
 index: 1
 ---
 
-A GraphQL system is called a _schema_. The schema contains all the types and fields in the system. The schema executes queries and publishes an [introspection system](/schema/introspection).
+A GraphQL system is called a _schema_. The schema contains all the types and fields in the system. The schema executes queries and publishes an [introspection system]({{ "/schema/introspection" | relative_url }}).
 
 Your GraphQL schema is a class that extends `GraphQL::Schema`, for example:
 
@@ -42,7 +42,7 @@ There are lots of schema configuration options:
 - [default limits](#default-limits)
 - [plugins](#plugins)
 
-For defining GraphQL types, see the guides for those types: [object types](/type_definitions/objects), [interface types](/type_definitions/interfaces), [union types](/type_definitions/unions),  [input object types](/type_definitions/input_objects), [enum types](/type_definitions/enums), and  [scalar types](/type_definitions/scalars).
+For defining GraphQL types, see the guides for those types: [object types]({{ "/type_definitions/objects), [interface types](/type_definitions/interfaces), [union types](/type_definitions/unions),  [input object types](/type_definitions/input_objects), [enum types](/type_definitions/enums), and  [scalar types](/type_definitions/scalars" | relative_url }}).
 
 ## Root Objects, Introspection and Orphan Types
 
@@ -60,7 +60,7 @@ class MySchema < GraphQL::Schema
 end
 ```
 
-__Introspection__ is a built-in part of the schema. Every schema has a default introspection system, but you can [customize it](/schema/introspection) and hook it up with `introspection`:
+__Introspection__ is a built-in part of the schema. Every schema has a default introspection system, but you can [customize it]({{ "/schema/introspection" | relative_url }}) and hook it up with `introspection`:
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -68,7 +68,7 @@ class MySchema < GraphQL::Schema
 end
 ```
 
-__Orphan Types__ are types which should be in the schema, but can't be discovered by traversing the types and fields from `query`, `mutation` or `subscription`. This has one very specific use case, see [Orphan Types](/type_definitions/interfaces#orphan-types).
+__Orphan Types__ are types which should be in the schema, but can't be discovered by traversing the types and fields from `query`, `mutation` or `subscription`. This has one very specific use case, see [Orphan Types]({{ "/type_definitions/interfaces#orphan-types" | relative_url }}).
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -80,7 +80,7 @@ end
 
 A GraphQL schema needs a handful of hooks for finding and disambiguating objects while queries are executed.
 
-__`resolve_type`__ is used when a specific object's corresponding GraphQL type must be determined. This happens for fields that return [interface](/type_definitions/interfaces) or  [union](/type_definitions/unions) types. The class method `def self.resolve_type` is used:
+__`resolve_type`__ is used when a specific object's corresponding GraphQL type must be determined. This happens for fields that return [interface]({{ "/type_definitions/interfaces) or  [union](/type_definitions/unions" | relative_url }}) types. The class method `def self.resolve_type` is used:
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -114,7 +114,7 @@ end
 
 ## Execution Configuration
 
-__`instrument`__ attaches instrumenters to the schema, see [Instrumentation](/queries/instrumentation) for more information.
+__`instrument`__ attaches instrumenters to the schema, see [Instrumentation]({{ "/queries/instrumentation" | relative_url }}) for more information.
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -122,7 +122,7 @@ class MySchema < GraphQL::Schema
 end
 ```
 
-__`tracer`__ is another way to hook into execution, see [Tracing](/queries/tracing) for more.
+__`tracer`__ is another way to hook into execution, see [Tracing]({{ "/queries/tracing" | relative_url }}) for more.
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -130,7 +130,7 @@ class MySchema < GraphQL::Schema
 end
 ```
 
-__`query_analyzer`__ and __`multiplex_analyzer`__ accept processors for ahead-of-type query analysis, see [Analysis](/queries/analysis) for more.
+__`query_analyzer`__ and __`multiplex_analyzer`__ accept processors for ahead-of-type query analysis, see [Analysis]({{ "/queries/analysis" | relative_url }}) for more.
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -138,7 +138,7 @@ class MySchema < GraphQL::Schema
 end
 ```
 
-__`lazy_resolve`__ registers classes with [lazy execution](/schema/lazy_execution):
+__`lazy_resolve`__ registers classes with [lazy execution]({{ "/schema/lazy_execution" | relative_url }}):
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -146,7 +146,7 @@ class MySchema < GraphQL::Schema
 end
 ```
 
-__`type_error`__ handles type errors at runtime, read more in the [Invariants guide](/errors/type_errors).
+__`type_error`__ handles type errors at runtime, read more in the [Invariants guide]({{ "/errors/type_errors" | relative_url }}).
 
 ```ruby
 class MySchema < GraphQL::Schema
@@ -185,7 +185,7 @@ Then, during execution, `context` will be an instance `CustomContext`.
 
 ## Default Limits
 
-`max_depth` and `max_complexity` apply some limits to incoming queries. See [Complexity and Depth](/queries/complexity_and_depth) for more.
+`max_depth` and `max_complexity` apply some limits to incoming queries. See [Complexity and Depth]({{ "/queries/complexity_and_depth" | relative_url }}) for more.
 
 `default_max_page_size` applies limits to `Connection` fields.
 
@@ -199,7 +199,7 @@ end
 
 ## Plugins
 
-A plugin is an object that responds to `#use`. Plugins are used to attach new behavior to a schema without a lot of API overhead. For example, the gem's [monitoring tools](/queries/tracing#monitoring) are plugins:
+A plugin is an object that responds to `#use`. Plugins are used to attach new behavior to a schema without a lot of API overhead. For example, the gem's [monitoring tools]({{ "/queries/tracing#monitoring" | relative_url }}) are plugins:
 
 ```ruby
 class MySchema < GraphQL::Schema

@@ -30,13 +30,13 @@ GraphQL-Ruby includes two classes to help you write mutations:
 - `GraphQL::Schema::Mutation`, a bare-bones base class
 - `GraphQL::Schema::RelayClassicMutation`, a base class with a set of nice conventions that also supports the Relay Classic mutation specification.
 
-Besides those, you can also use the plain [field API](/type_definitions/objects#fields) to write mutation fields.
+Besides those, you can also use the plain [field API]({{ "/type_definitions/objects#fields" | relative_url }}) to write mutation fields.
 
 An additional `null` helper method is provided on classes inheriting from `GraphQL::Schema::Mutation` to allow setting the nullability of the mutation. This is not required and defaults to `true`.
 
 ## Example mutation class
 
-If you used the [install generator](/schema/generators#graphqlinstall), a base mutation class will already have been generated for you. If that's not the case, you should add a base class to your application, for example:
+If you used the [install generator]({{ "/schema/generators#graphqlinstall" | relative_url }}), a base mutation class will already have been generated for you. If that's not the case, you should add a base class to your application, for example:
 
 ```ruby
 class Mutations::BaseMutation < GraphQL::Schema::RelayClassicMutation
@@ -84,7 +84,7 @@ end
 
 The `#resolve` method should return a hash whose symbols match the `field` names.
 
-(See [Mutation Errors](/mutations/mutation_errors) for more information about returning errors.)
+(See [Mutation Errors]({{ "/mutations/mutation_errors) for more information about returning errors." | relative_url }})
 
 ## Hooking up mutations
 
@@ -118,7 +118,7 @@ class Mutations::AddStar < Mutations::BaseMutation
 end
 ```
 
-By specifying that the `post_id` argument loads a `Types::Post` object type, a `Post` object will be loaded via [`Schema#object_from_id`](/schema/definition.html#object-identification-hooks) with the provided `post_id`.
+By specifying that the `post_id` argument loads a `Types::Post` object type, a `Post` object will be loaded via [`Schema#object_from_id`]({{ "/schema/definition.html#object-identification-hooks" | relative_url }}) with the provided `post_id`.
 
 All arguments that end in `_id` and use the `loads:` method will have their `_id` suffix removed. For example, the mutation resolver above receives a `post` argument which contains the loaded object, instead of a `post_id` argument.
 

@@ -12,4 +12,4 @@ index: 4
 
 To get started, see examples in the API docs: `GraphQL::Subscriptions::ActionCableSubscriptions`.
 
-See client usage for [Apollo Client](/javascript_client/apollo_subscriptions) or [Relay Modern](/javascript_client/relay_subscriptions).
+See client usage for [Apollo Client]({{ "/javascript_client/apollo_subscriptions) or [Relay Modern](/javascript_client/relay_subscriptions" | relative_url }}).

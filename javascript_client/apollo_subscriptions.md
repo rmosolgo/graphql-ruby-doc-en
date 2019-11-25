@@ -156,11 +156,11 @@ const client = new ApolloClient({
 
 ## Apollo 1
 
-`graphql-ruby-client` includes support for Apollo 1 client subscriptions over [Pusher](/subscriptions/pusher_implementation) or [ActionCable](/subscriptions/action_cable_implementation).
+`graphql-ruby-client` includes support for Apollo 1 client subscriptions over [Pusher]({{ "/subscriptions/pusher_implementation) or [ActionCable](/subscriptions/action_cable_implementation" | relative_url }}).
 
 To use it, require `subscriptions/addGraphQLSubscriptions` and call the function with your network interface and transport client (example below).
 
-See the [Subscriptions guide](/subscriptions/overview) for information about server-side setup.
+See the [Subscriptions guide]({{ "/subscriptions/overview" | relative_url }}) for information about server-side setup.
 
 ### Apollo 1 -- Pusher
 

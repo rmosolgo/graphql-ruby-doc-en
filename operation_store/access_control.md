@@ -31,13 +31,13 @@ The Authorization header takes the form:
 "GraphQL::Pro #{client_name} #{hmac}"
 ```
 
-[graphql-ruby-client](/javascript_client/sync) adds this header to outgoing requests by using the provided `--client` and `--secret` values.
+[graphql-ruby-client]({{ "/javascript_client/sync" | relative_url }}) adds this header to outgoing requests by using the provided `--client` and `--secret` values.
 
 ## Authorization
 
-Incoming operations are validated. If you're using `GraphQL::Pro`'s [visibility authorization](/pro/authorization#visibility-authorization), you must determine whether the current client can _see_ the types and fields which are used in the operation.
+Incoming operations are validated. If you're using `GraphQL::Pro`'s [visibility authorization]({{ "/pro/authorization#visibility-authorization" | relative_url }}), you must determine whether the current client can _see_ the types and fields which are used in the operation.
 
-You can implement authorization for incoming queries with the `authorize(..., operation_store:)` option, which accepts a [auth strategy class](/pro/authorization#custom-authorization-strategy), for example:
+You can implement authorization for incoming queries with the `authorize(..., operation_store:)` option, which accepts a [auth strategy class]({{ "/pro/authorization#custom-authorization-strategy" | relative_url }}), for example:
 
 ```ruby
 authorize(:pundit, operation_store: OperationStoreStrategy)
